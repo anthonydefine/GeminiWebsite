@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini - Home</title>
+  <link rel="stylesheet" href="/sass/main.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<header>
+  <nav class="navbar fixed-top navbar-expand-md bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#topHomeContainer">
+        <img src="images/geminilogo-removebg-preview.png" alt="Company logo" width="30" height="24" class="d-inline-block align-text-top">
+        Gemini Industrial Machine
+      </a>
+      <button
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      class="navbar-toggler navbar-dark"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end px-3" id="navbarNav">
+        <ul class="navbar-nav navbar-dark align-items-center">
+          <li class="nav-item">
+            <a href="#engineeringJump" class="nav-link">
+              Engineering
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#fabricationJump" class="nav-link">
+              Fabrication
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#manufacturingJump" class="nav-link">
+              Manufacturing
+            </a>
+          </li>
+          <li class="nav-item p-1">
+            <a href="#contactJump" class="btn btn-primary px-4">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body class="bg-dark" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="60">
+  <div class="scroll-tracker"></div>
+  <div class="container-fluid d-flex align-items-center mt-1" id="topHomeContainer" style="height: 500px;">
+    <div class="container-fluid col-8" id="topHomeInner">
+      <h1 class="text-white one animate fadeInUp">Welcome to Gemini</h1>
+      <p class="text-light two animate fadeInDown">At Gemini we believe in thinking differently by creating machines for our customers that perform flawlessly,
+        are easy to maintain and provide stellar customer serivice.</p>
+      <a href="#contactJump" class="btn btn-primary">Get in touch</a>
+    </div>
+  </div>
+  <!--Second header-->
+  <div class="container-fluid text-light" id="servicesContainer" style="text-align: center;">
+    <h2 class="col-12"><span id="offerTitle">What we offer</span></h2>
+    <p class="col-12">The details are what separate us from the others.</p>
+  </div>
+  <!--What service we offer cards-->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 p-4 bg-dark">
+    <div class="col">
+      <div class="card bg-info text-light" id="servicesCard" style="transition: 0.5s;">
+        <div class="card-body d-flex flex-column align-items-center">
+          <img class="card-title" src="images/icons8-blueprint-48.png" alt="Manufacturing icon">
+          <h3 class="card-title">Engineering + Design</h3>
+          <p class="card-text p-3">We believe in focused engineering and design review. It is the foundation in how we operate.
+            Let us sit down and show you our process, we think you will like what you see.
+          </p>
+        </div>
+        <div class="card-footer bg-transparent border-0 d-flex justify-content-center">
+          <a href="#engineeringJump" class="btn btn-warning">Learn more</a>
+        </div>
+      </div>
+    </div>
+      <div class="col">
+        <div class="card bg-info text-light" id="servicesCard" style="transition: 0.5s;">
+          <div class="card-body d-flex flex-column align-items-center"">
+            <img class="card-title" src="images/icons8-steel-i-beam-48.png" alt="Fabrication icon">
+            <h3 class="card-title">Fabrication</h3>
+            <p class="card-text p-3">Fabrication is the soul of any machine builder. We take pride in using state-of-the-art
+              machines to produce high-quality reliable machines.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0 d-flex justify-content-center">
+            <a href="#fabricationJump" class="btn btn-warning">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-info text-light" id="servicesCard" style="transition: 0.5s;">
+          <div class="card-body d-flex flex-column align-items-center">
+            <img class="card-title" src="images/icons8-deployment-48.png" alt="Manufacturing icon">
+            <h3 class="card-title">Manufacturing</h3>
+            <p class="card-text p-3">Don't want to make your product in house? Let us solve that problem by either
+              producing it under our roof or one of our strategic partners. We have a solution that will work for you.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0 d-flex justify-content-center">
+            <a href="#manufacturingJump" class="btn btn-warning">Learn more</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--Engineering Section-->
+  <div class="container-fluid text-light bg-success p-4" id="engineeringJump">
+    <div class="d-inline-flex">
+      <img src="images/icons8-blueprint-48.png">
+      <h2 class="pt-2 px-2 sectiontitle">Engineering</h2>
+    </div>
+    <p>We believe in flexible engineering. Flexible engineering allows more fluid design. Our engineers spend 
+      time with our fabrication team looking for ways to improve the design. Improvement can be something as simple at the 
+      location of a bracket, or a complete redesign to make maintenance easier down the road.</p><br>
+    <p class="text-warning">Examples of finished projects for customers below.</p>
+  </div>
+  <div class="container-fluid text-light bg-dark" id="engineeringContent">
+    <div class="row row-cols-1 g-4 p-4 bg-dark">
+      <div class="col-6">
+        <div class="card bg-dark text-warning" id="sprayContainer" style="height: 15rem;">
+          <div class="card-body" id="sprayHover">
+            <h3 class="card-title">Down draft coating spray booth</h3>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#sprayModal">View Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card bg-dark text-warning" id="routerContainer" style="height: 15rem;">
+          <div class="card-body" id="routerHover">
+            <h3 class="card-title">Servo-controlled router table</h3>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#routerModal">View Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card bg-dark text-warning" id="sortingContainer" style="height: 15rem;">
+          <div class="card-body" id="sortingHover">
+            <h3 class="card-title">Custom parts sorting carousel</h3>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#sortingModal">View Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fabrication Section-->
+  <div class="container-fluid text-light bg-success p-4" id="fabricationJump">
+    <div class="d-inline-flex">
+      <img src="images/icons8-steel-i-beam-48.png">
+      <h2 class="pt-2 px-3">Fabrication</h2>
+    </div>
+    <p>Our engineers design for fabricators. This gives the highest quality control possible for the client. 
+      If a problem is discovered, it can be quickly addressed and remedied. We use an advanced ERP software to 
+      track all aspects of fabrication and assembly, this give us the ability to give clients real-time 
+      updates on the status of their project.</p>
+  </div>
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="card mb-3" style="width: 90%; border: none;">
+      <div class="row g-0">
+        <div class="col-md-4 p-4 bg-info">
+          <h2 class="text-warning">Software Capabilities:</h2>
+          <div class="row g-2">
+            <div class="btn-group col">
+              <button class="btn btn-warning btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                AutoCad
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">Inventor</li>
+                <li class="dropdown-item">Fusion 360</li>
+                <li class="dropdown-item">3DS Max</li>
+                <li class="dropdown-item">Mechanical</li>
+                <li class="dropdown-item">Electrical</li>
+                <li class="dropdown-item">Showcase + Simulation</li>
+              </ul>
+            </div>
+            <div class="btn-group col">
+              <button class="btn btn-warning btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Solidworks
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">with Simulation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Cutting
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">6’ x 12’ (2m x 4m) Water Jet capable of cutting 12” thick steel</li>
+                      <li class="list-group-item">5’ x 5’ (1.5mx 1.5m) Water Jet capable of cutting 8” thick steel</li>
+                      <li class="list-group-item">¾” Plasma</li>
+                      <li class="list-group-item">60” Horizontal Bandsaw</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Materials
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <h5>Materials</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Nearly any alloy of steel</li>
+                      <li class="list-group-item">Stainless Steel</li>
+                      <li class="list-group-item">Aluminum</li>
+                      <li class="list-group-item">Ceramics / Brick</li>
+                      <li class="list-group-item">Plasitc</li>
+                    </ul>
+                    <h5>Painting</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">18’ x 9’ (6m x 3m) Enclosed Paint Booth</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Machining
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <h5>Machining</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">18” x 18” x 36” CNC Mill</li>
+                      <li class="list-group-item">12” x 18” CNC Lathe</li>
+                      <li class="list-group-item">12” x 48” Lathe</li>
+                      <li class="list-group-item">18” x 36” Vertical Mill</li>
+                    </ul>
+                    <h5>Welding</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Mig</li>
+                      <li class="list-group-item">Tig</li>
+                      <li class="list-group-item">SMAW (Stick)</li>
+                    </ul>
+                    <h5>Bending</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">75 Ton 12’ (4m) Press Brake</li>
+                      <li class="list-group-item">2.5” Diameter CNC Pipe/Tubing Bender</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Break out electrical testing panels
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">480v 3 Phase</li>
+                      <li class="list-group-item">220/240v</li>
+                      <li class="list-group-item">120/120</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Manufacturing Section-->
+  <div class="container-fluid text-light bg-success p-4" id="manufacturingJump">
+    <div class="d-inline-flex">
+      <img src="images/icons8-deployment-48.png">
+      <h2 class="pt-2 px-3">Manufacturing</h2>
+    </div>
+    <p>Our engineers design for fabricators. This gives the highest quality control possible for the client. 
+      If a problem is discovered, it can be quickly addressed and remedied. We use an advanced ERP software to 
+      track all aspects of fabrication and assembly, this give us the ability to give clients real-time 
+      updates on the status of their project.</p>
+  </div>
+  <div class="container-fluid d-flex flex-column px-5 reveal">
+    <div class="card mb-5 bg-success">
+      <div class="row rows-col-1 g-2">
+        <div class="col-2 d-flex align-content-center">
+          <img src="images/icons8-communication-96.png" class="img-fluid rounded-start" id="manuIcons">
+        </div>
+        <div class="col-10">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Reach out with your idea</h3>
+            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar congue consequat. 
+                Vivamus a leo ligula. Duis ornare vestibulum enim, a sodales magna lacinia sed. In dolor mi, dapibus id iaculis 
+                ac, vehicula ut nisl. Integer felis nulla, aliquam eget neque in, vulputate mollis nunc. Vivamus malesuada, erat 
+                sed venenatis facilisis, risus mi tempor odio, in interdum metus sem id metus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-5 bg-success">
+      <div class="row rows-col-1 g-2">
+        <div class="col-2 d-flex align-content-center">
+          <img src="images/icons8-group-of-projects-96.png" class="img-fluid rounded-start" id="manuIcons">
+        </div>
+        <div class="col-10">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Collaborate on project</h3>
+            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar congue consequat. 
+                Vivamus a leo ligula. Duis ornare vestibulum enim, a sodales magna lacinia sed. In dolor mi, dapibus id iaculis 
+                ac, vehicula ut nisl. Integer felis nulla, aliquam eget neque in, vulputate mollis nunc. Vivamus malesuada, erat 
+                sed venenatis facilisis, risus mi tempor odio, in interdum metus sem id metus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-5 bg-success">
+      <div class="row rows-col-1 g-2">
+        <div class="col-2 d-flex align-content-center">
+          <img src="images/icons8-timeline-96.png" class="img-fluid rounded-start" id="manuIcons">
+        </div>
+        <div class="col-10">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Create and begin timeline</h3>
+            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar congue consequat. 
+                Vivamus a leo ligula. Duis ornare vestibulum enim, a sodales magna lacinia sed. In dolor mi, dapibus id iaculis 
+                ac, vehicula ut nisl. Integer felis nulla, aliquam eget neque in, vulputate mollis nunc. Vivamus malesuada, erat 
+                sed venenatis facilisis, risus mi tempor odio, in interdum metus sem id metus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-5 bg-success">
+      <div class="row rows-col-1 g-2">
+        <div class="col-2 d-flex align-content-center">
+          <img src="images/icons8-fork-lift-96.png" class="img-fluid rounded-start" id="manuIcons">
+        </div>
+        <div class="col-10">
+          <div class="card-body">
+            <h3 class="card-title text-primary">Product deployment</h3>
+            <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar congue consequat. 
+                Vivamus a leo ligula. Duis ornare vestibulum enim, a sodales magna lacinia sed. In dolor mi, dapibus id iaculis 
+                ac, vehicula ut nisl. Integer felis nulla, aliquam eget neque in, vulputate mollis nunc. Vivamus malesuada, erat 
+                sed venenatis facilisis, risus mi tempor odio, in interdum metus sem id metus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Project example Modals-->
+  <div class="modal fade" id="sprayModal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="launchsprayModallabel" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-light text-dark">
+          <h4 class="modal-title">Down draft coating spray booth</h4>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container modal-body bg-light" style="height: 36rem;">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="max-height: 16rem;">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/projectex/273498641_1624697904564919_6473138236758421660_n.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/273515374_1624698021231574_8656207759647378566_n.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/273524333_1624697924564917_5977651336878172195_n.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/273731153_1624697921231584_4314818529433452618_n.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container-fluid text-dark py-3" data-bs-spy="scroll" data-bs-offset="0" tabindex="0" style="overflow-y: scroll; height: 16rem;" id="modalScroll">
+            <p>Another successful project being delivered! This is a custom Down Draft Coating
+              Spray Booth designed, engineered, and manufactured by Gemini Industrial Machine Group. This spray booth integrates into our
+              customer’s continuous manufacturing line. It is about 24 feet long with six spray heads and is prepped to easily upgrade to twelve. The PLC menu control system provides consistency,
+              quality, reduces overspray and waste, provides a cleaner working environment, and improves overall efficiency for our customer.  The second unit will deliver in a couple of weeks!
+              Gemini appreciates and is thankful for great customers and great employees working together to deliver world class manufacturing automation solutions!
+              <br><br>Designed, Engineered, and Built by Gemini Industrial Machine Group, LLC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="routerModal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="launchrouterModallabel" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-light text-dark">
+          <h4 class="modal-title">Servo-controlled router table</h4>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container modal-body bg-light" style="height: 36rem;">
+          <div id="carouselExampleServo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="max-height: 16rem;">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/projectex/servo1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/servo2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/servo3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleServo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleServo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container-fluid text-dark py-3" data-bs-spy="scroll" data-bs-offset="0" tabindex="0" style="overflow-y: scroll; height: 16rem;" id="modalScroll">
+            <p>We are thrilled to deliver our latest machine! This custom servo-controlled Router Table was designed, engineered, and fabricated by Gemini 
+              Industrial Machine Group to help our customer increase production efficiency. If you get a chance, check out their unique and beautiful floating shelves at www.createdhardwood.com. 
+              A big thank you to Created Hardwood LTD and to our employees for your hard work and determination!
+              <br><br>Designed, Engineered, and Built by Gemini Industrial Machine Group, LLC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sortingModal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="launchsortingModallabel" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-light text-dark">
+          <h4 class="modal-title">Custom parts sorting carousel</h4>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container modal-body bg-light" style="height: 36rem;">
+          <div id="carouselExampleSorting" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="max-height: 16rem;">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/projectex/sorting1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/sorting2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/projectex/sorting3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSorting" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSorting" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container-fluid text-dark py-3" data-bs-spy="scroll" data-bs-offset="0" tabindex="0" style="overflow-y: scroll; height: 16rem;" id="modalScroll">
+            <p>This custom parts sorting carousel will be integrated into our customer’s packaging line. Customer has product that are fed down conveyor. 
+              Employees put empty boxes on carousel, then pull the good product off the conveyor, and stack them into the boxes. When a box is full, it is pulled from the carousel, and the cycle begins again.<br><br>
+              Designed, Engineered, and Built by Gemini Industrial Machine Group, LLC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Contact Section-->
+  <div class="container-fluid bg-success" id="contactJump">
+    <div class="container-fluid text-light bg-success p-4" id="serviceTitle">
+      <h2>Get in touch with us!</h2>
+      <p>Let us help you solve your problem. No job is too small. We have engineered everything from simple product baskets to complex machines with unique variable PLC controls.</p>
+    </div>
+    <div class="row row-cols-1">
+      <div class="row mt-5">
+        <div class="col" id="contactLinks">
+          <ul class="list-group list-group-horizontal py-4">
+            <li class="list-group-item bg-success">
+              <img src="images/contacticons/icons8-address-48.png">
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-success text-light">1826 Tech Park Dr NE, New Philadelphia, OH 44663</li>
+          </ul>
+          <ul class="list-group list-group-horizontal py-4">
+            <li class="list-group-item bg-success">
+              <img src="images/contacticons/icons8-mailbox-48.png">
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-success text-light">
+              <a href="mailto:info@geminiindustrial.com">Send us an email!</a>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal py-4">
+            <li class="list-group-item bg-success">
+              <img src="images/contacticons/icons8-hand-with-smartphone-48.png">
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-success text-light">
+              <a href="tel:330-364-7300">(330)-364-7300</a>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal py-4">
+            <li class="list-group-item bg-success">
+              <img src="images/contacticons/icons8-facebook-48.png">
+            </li>
+            <li class="list-group-item d-flex align-items-center bg-success text-light">
+              <a href="https://www.facebook.com/geminiindustrialmachine">Follow us on Facebook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col mt-4">
+          <label class="text-light">Send us a quick message!</label>
+          <form action="https://formsubmit.co/anthonydefine@icloud.com" method="post" id="messageForm">
+            <input type="hidden" name="_next" value="thankyou.html">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="row">
+              <div class="col py-4">
+                <div>
+                  <input class="form-control" type="text" name="FirstName" placeholder="First Name" required>
+                </div>
+              </div>
+              <div class="col py-4">
+                <div>
+                  <input class="form-control" type="text" name="LastName" placeholder="Last Name" required>
+                </div>
+              </div>
+            </div>         
+              <div class="py-4">
+                <input type="email" class="form-control" name="Email" placeholder="name@example.com" required>
+              </div>
+              <div class="py-4">
+                <textarea class="form-control" name="Message" placeholder="message" style="height: 100px" required></textarea>
+              </div>
+            <div class="row mt-2 d-flex justify-content-center">
+              <button class="btn btn-outline-warning" id="messageSubmit" type="submit" style="max-width: 150px;">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.1205611721116!2d-81.4082565!3d40.484642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8836e21c31268f79%3A0xaabcd43f8bfa3f5c!2sGemini%20Industrial%20Machine%20Group%20LLC!5e1!3m2!1sen!2sus!4v1668133338104!5m2!1sen!2sus" width="90%" height="400" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!--Footer w/ scroll to top button-->
+  <div class="mt-2">
+    <nav class="navbar sticky-bottom text-light navbar-dark bg-dark" id="footerNav">
+      <div class="container-fluid justify-content-center pt-2">
+        <p style="font-size: smaller;"><i>Copyright 2022 - Gemini Industrial Machine Group LLC</i></p>
+      </div>
+    </nav>
+    <button type="button" id="scrollTopBtn" class="btn float-end rounded-pill" data-bs-toggle="tooltip" data-bs-placement="left" title="scroll to top!">
+      <img src="images/scroll.gif" id="scrollImg">
+    </button>
+  </div>
+  <script src="gemini.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+
+$primary: #1C74D6;
+$secondary: #DF0E2D;
+$info: #274c77;
+$success: #2b2b2b;
+$dark: #1F1F1F;
+$card-height: 100%;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/functions"; 
+@import "../node_modules/bootstrap/scss/variables"; 
+@import "../node_modules/bootstrap/scss/mixins";
